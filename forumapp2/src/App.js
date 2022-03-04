@@ -5,7 +5,10 @@ import React from "react";
 //import Input from "./components/Input/main";
 import ListOfInterests from "./components/ListOfInterests/ListOfInterests";
 import Navbar from "./components/NavigationBar/Navbar";
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/Pages/Home";
+import About from "./components/Pages/About";
+import TopicHeader from "./components/Pages/TopicHeader";
 
 //User comes to page with login...they can either search by topic of interest or write their own meetup
 //Search by location, then topic
@@ -18,27 +21,18 @@ import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
-      <>
-    <BrowserRouter>
-      <Navbar/>
-      <div className="container mt-2" style={{ marginTop: 40 }}>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-        </Switch>
+    <>
+      <BrowserRouter>
+        <Navbar />
+        <div className="container mt-2" style={{ marginTop: 40 }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/topicHeader" element={<TopicHeader />} />
+          </Routes>
         </div>
-    </BrowserRouter>
-      <div>
-        <h1 className="title">Welcome to the BoostCamp Forum!!!</h1>
-        <ListOfInterests />
-        <il>{Comment}</il>
-        {/* <Input>Enter Text Here</Input> */}
-      </div>
-      </>
+      </BrowserRouter>
+    </>
   );
 }
 

@@ -1,6 +1,10 @@
 import React, { useState } from "react";
-import { NavLink, BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import {
+  NavLink,
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -45,6 +49,13 @@ const Navbar = () => {
               to="/profile"
             >
               Profile
+            </NavLink>
+            <NavLink
+              className="navbar-item"
+              activeClassName="is-active"
+              to="/topicHeader"
+            >
+              Topic Header
             </NavLink>
           </div>
 

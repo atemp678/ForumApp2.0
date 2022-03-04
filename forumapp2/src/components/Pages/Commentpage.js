@@ -1,5 +1,5 @@
 import React from "react";
-import ListOfInterests from '../ListOfInterests/ListOfInterests'
+import ListOfInterests from "../ListOfInterests/ListOfInterests";
 import Input from "../Input/main";
 
 const CommentPage = () => (
