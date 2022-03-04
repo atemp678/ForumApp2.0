@@ -2,7 +2,7 @@
 
 ## What is this?
 
-This is a forum application for the mobile app: Boost Camp, it is primarily a feature by Austyn Tempesta, but is not cursory to the MVP. 
+This is a forum application for the mobile app: Boost Camp, it is primarily a feature by Austyn Tempesta, but is not compulsory to the MVP. 
 
 It uses mostly react native and is primarily a learning experience for react. 
 
