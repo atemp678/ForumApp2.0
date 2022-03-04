@@ -18,8 +18,9 @@ import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
-          <BrowserRouter>
-      <Navbar />
+      <>
+    <BrowserRouter>
+      <Navbar/>
       <div className="container mt-2" style={{ marginTop: 40 }}>
         <Switch>
           <Route exact path="/">
@@ -29,15 +30,15 @@ function App() {
             <About />
           </Route>
         </Switch>
-      </div>
+        </div>
     </BrowserRouter>
-
       <div>
         <h1 className="title">Welcome to the BoostCamp Forum!!!</h1>
         <ListOfInterests />
         <il>{Comment}</il>
         {/* <Input>Enter Text Here</Input> */}
       </div>
+      </>
   );
 }
 
