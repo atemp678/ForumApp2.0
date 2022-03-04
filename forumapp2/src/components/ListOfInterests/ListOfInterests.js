@@ -3,7 +3,8 @@ const ListOfInterests = () => {
     {
       Topic: "FootBall",
       CityYourFrom: "Birmingham",
-      Description: "Hi Jordan, lets meet up at Bullring and go to the Football game!",
+      Description:
+        "Hi Jordan, lets meet up at Bullring and go to the Football game!",
     },
   ];
   return <div>{listArray.map(() => {})}</div>;

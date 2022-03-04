@@ -1,12 +1,12 @@
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
 
-// function Input({ comment }){
-//     const [comment, setComment] = useState("");
+function Input(){
+    const [comment, setComment] = useState("");
 
-//     return (
-//         <div>
-//         <input onChange={() => setComment(comment)}/>
-//         </div>
-//     )
-// }
-// export default Input;
+    return (
+        <div>
+        <input onChange={() => setComment(comment)}/>
+        </div>
+    )
+}
+export default Input;
